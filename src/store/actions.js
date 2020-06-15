@@ -1,4 +1,4 @@
-import { fetchProducts } from '../services/api'
+import { fetchProducts } from '../infrastructure/api'
 import turnToSlug from '../utils/turnToSlug'
 import {
   GET_PRODUCTS_STARTED,

@@ -1,4 +1,4 @@
-import * as api from '../services/api'
+import * as api from '../infrastructure/api'
 import { getMockStore, runActionsOnReducer } from '../utils/testStore'
 import { 
   GET_PRODUCTS_STARTED, 
@@ -14,8 +14,8 @@ import {
   DISMISS_SUCCESS,
   DISMISS_ERROR,
   CLOSE_SIDE_PANEL,
-  sidePanels,
   OPEN_SIDE_PANEL,
+  sidePanels,
 } from './actionTypes'
 import * as actions from './actions'
 import { initialState, reducer } from './reducer'

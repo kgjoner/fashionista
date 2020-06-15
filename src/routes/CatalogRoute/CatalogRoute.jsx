@@ -10,6 +10,7 @@ import Footer from '../../components/Footer'
 function CatalogRoute() {
   const products = useSelector(state => state.products)
   const product = useSelector(state => state.singleProduct)
+  const isLoading = useSelector(state => state.fetching)
   const dispatch = useDispatch()
 
   useEffect(() => {
@@ -21,9 +22,9 @@ function CatalogRoute() {
 
   return (
     <React.Fragment>
-      {products.length
-        ? <Catalog />
-        : <Loading text={'Carregando catálogo...'}/>
+      {isLoading
+        ? <Loading text={'Carregando catálogo...'}/>
+        : <Catalog />
       }
       <Footer />
     </React.Fragment>
