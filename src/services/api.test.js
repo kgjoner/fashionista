@@ -40,10 +40,10 @@ describe('Api Calls', () => {
       })
     )
 
-    const expectedError = {
+    const expectedError = new Error ({
       status: 500,
       message: 'Internal server error'
-    }
+    })
 
     return expect(api.fetchProducts()).rejects.toEqual(expectedError)
   })
