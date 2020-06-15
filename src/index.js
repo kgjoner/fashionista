@@ -6,7 +6,6 @@ import { store } from './store'
 import * as serviceWorker from './serviceWorker'
 
 import App from './App'
-import './utils/turnToSlug'
 import './assets/css/global.css'
 
 ReactDOM.render(
