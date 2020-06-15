@@ -1,0 +1,135 @@
+.listed-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--light-color);
+  position: relative;
+}
+
+.listed-product--column {
+  flex-direction: column;
+  align-items: center;
+  border: none;
+}
+
+.listed-product .product__image {
+  width: 25%;
+}
+
+.listed-product--column .product__image {
+  width: 100%;
+}
+
+.listed-product .product__discount {
+  font-size: 12px;
+}
+
+.listed-product__info {
+  flex-grow: 2;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.listed-product__name {
+  font-size: 14px;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  text-align: left;
+}
+
+.listed-product--column .listed-product__name {
+  white-space: nowrap;
+  margin-top: 8px;
+  margin-bottom: 1px;
+}
+
+.listed-product__size {
+  font-size: 12px;
+  font-weight: 600;
+  color: #a7a7a7;
+  font-size: 0.8em;
+  margin-top: 6px;
+}
+
+.listed-product__actions {
+  margin-top: 6px;
+}
+
+.listed-product__action {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  font-size: 12px;
+  color: var(--dark-color);
+  height: 22px;
+  width: 22px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.listed-product__action:hover,
+.listed-product__action:focus {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.listed-product__number {
+  padding: 0 16px;
+}
+
+.listed-product__pricing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+}
+
+.listed-product--column .listed-product__pricing {
+  flex-direction: row;
+}
+
+.listed-product .product__text {
+  font-weight: bold;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.listed-product--column .product__text {
+  font-weight: normal;
+}
+
+.listed-product .product__text--foggy {
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+  margin-top: 6px;
+}
+
+.listed-product:not(.listed-product--column)
+.product__text + .product__text {
+  margin-left: 0;
+}
+
+.listed-product__remove {
+  background-color: transparent;
+  border: none;
+  color: var(--danger-color-variant);
+  font-size: 12px;
+  white-space: nowrap;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.listed-product__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

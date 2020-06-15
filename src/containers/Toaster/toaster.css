@@ -1,0 +1,49 @@
+.toaster {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  height: 80px;
+  overflow: hidden;
+}
+
+.toaster--hidden {
+  display: none;
+}
+
+.toaster__container {
+  position: relative;
+  animation: recoil 0.8s forwards;
+}
+
+.toaster__container--toast {
+  animation: toast 0.6s
+}
+
+@keyframes toast {
+  0% {
+    top: 60px;
+    opacity: 0.2;
+  }
+  100%{
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes recoil {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100%{
+    top: 80px;
+    opacity: 0;
+  }
+}
+
+@media(min-width: 1280px) {
+  .toaster {
+    top: auto;
+    bottom: 0;
+  }
+}

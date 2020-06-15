@@ -1,15 +1,15 @@
 import React from 'react';
-import { render } from '@testing-library/react';
-import { Provider } from 'react-redux';
-import store from './app/store';
+import { renderWithStoreAndRouter, getMockStore } from './utils/testStore'
 import App from './App';
+import { mockProducts } from './mocks';
 
-test('renders learn react link', () => {
-  const { getByText } = render(
-    <Provider store={store}>
-      <App />
-    </Provider>
-  );
+const store = getMockStore({ products: mockProducts})
 
-  expect(getByText(/learn/i)).toBeInTheDocument();
-});
+test('renders App component', () => {
+  const { queryByRole } = renderWithStoreAndRouter(<App />, store);
+
+  expect(queryByRole('banner')).toBeInTheDocument();
+  expect(queryByRole('complementary')).toBeInTheDocument();
+  expect(queryByRole('main')).toBeInTheDocument();
+  expect(queryByRole('contentinfo')).toBeInTheDocument();
+})

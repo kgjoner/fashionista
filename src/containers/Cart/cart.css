@@ -1,0 +1,17 @@
+.cart__subtotal-group {
+  display: flex;
+  padding: 14px 16px;
+  background-color: var(--primary-color);
+  align-items: baseline;
+}
+
+.cart__subtotal {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: #fff;
+}
+
+.cart__subtotal + .cart__subtotal {
+  margin-left: 8px;
+}

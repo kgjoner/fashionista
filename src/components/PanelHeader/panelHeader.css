@@ -1,0 +1,13 @@
+.panel-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 14px 16px;
+  background-color: #fff;
+}
+
+.panel-header__title {
+  font-size: 1.2rem;
+  margin: 0;
+  margin-left: 15px;
+}

@@ -1,0 +1,23 @@
+.loading {
+  padding-top: 100px;
+  flex-grow: 2;
+}
+
+.loading__icon {
+  animation: spin 0.6s linear infinite;
+  color: var(--dark-color);
+}
+
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.loading__text {
+  color: var(--dark-color);
+  margin-left: 10px;
+}

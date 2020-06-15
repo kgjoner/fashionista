@@ -1,0 +1,38 @@
+.notification {
+  border-radius: 4px;
+  padding: 10px 10px;
+  display: flex;
+  color: #fff;
+  z-index: 100;
+}
+
+.notification--success {
+  background-color: var(--success-color);
+}
+
+.notification--error {
+  background-color: var(--danger-color);
+}
+
+.notification--hidden {
+  visibility: hidden;
+}
+
+.notification__message {
+  margin: 0;
+}
+
+.notification__btn {
+  background: none;
+  border: 1px solid transparent;
+  margin-left: 15px;
+  color: #fdfdfd;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.notification__btn:focus {
+  outline: none;
+  border-color: #fdfdfd8a;
+  border-radius: 4px;
+}

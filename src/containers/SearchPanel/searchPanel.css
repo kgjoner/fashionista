@@ -1,0 +1,29 @@
+.search-panel__group {
+  background-color: #f2f2f2;
+  padding: 10px 16px;
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,.09)
+}
+
+.search-panel__field {
+  width: calc(100% - 32px);
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 10px;
+  font-weight: bold;
+  color: var(--dark-color);
+  background-color: #fff;
+}
+
+.search-panel__field::placeholder {
+  opacity: 0.75;
+}
+
+.search-panel__field:focus {
+  border-color: var(--light-color);
+  outline: none;
+}
+
+.search-panel .side-panel__list {
+  padding-top: 30px;
+}
