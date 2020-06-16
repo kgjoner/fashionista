@@ -8,22 +8,28 @@ An e-commerce frontend for clothing.
 ## Packages
 
 * React
-* Redux: including redux-thunk and redux-persist
+* Redux
+* Redux Thunk 
+* Redux Persist
 * React Router
 
 
 ## Basics
 
-It consumes the api on *https://5e9935925eabe7001681c856.mockapi.io/api/v1* only to get the products.
+It consumes the api on *https://5e9935925eabe7001681c856.mockapi.io/api/v1* to get the products.
 
-Thus, it allows browse and search for items, pick them, select their sizes and add them on a shopping cart. Once there, a single item quantity can be increasead or decreased, and the item can be removed from the cart.
+Once they are gotten, it allows browse and search for items, pick them, select their sizes and add them on a shopping cart. There a single item quantity can be increasead or decreased, or the item can be removed.
 
 
 ## Routes
 
-> */* --> home page, where the full catalog is displayed.
 >
-> */produto/:product-name* --> single product page, where is the full info about an item and where it can be added to the cart.
+> __*/*__ 
+> home page, where the full catalog is displayed.
+>
+> __*/produto/:product-name*__
+> single product page, where is the full info about an item and where it can be added to the cart.
+>
 
 
 ## Folder Structure
