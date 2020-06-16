@@ -20,6 +20,7 @@ describe('CatalogRoute Component', () => {
   })
 
   it('should render CatalogRoute loading products', () => {
+    store = getMockStore({ fetching: true })
     const { queryByRole, queryByText } = renderWithStoreAndRouter(<CatalogRoute />, store)
     
     expect(mockGet).toHaveBeenCalledTimes(1)
