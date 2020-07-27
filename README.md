@@ -1,6 +1,6 @@
 # Fashionista
 
-An e-commerce frontend for clothing.
+An e-commerce concept for clothing.
 
 ![Images of how the pages look like on desktop and mobile](/public/showoff.jpg)
 
@@ -16,20 +16,17 @@ An e-commerce frontend for clothing.
 
 ## Basics
 
-It consumes the api on *https://5e9935925eabe7001681c856.mockapi.io/api/v1* to get the products.
-
-Once they are gotten, it allows browse and search for items, pick them, select their sizes and add them on a shopping cart. There a single item quantity can be increasead or decreased, or the item can be removed.
+It looks for products on a database (more info about the API below). Once they are gotten, it allows browse and search for items, pick them, select their sizes and add them to a shopping cart. The quantity of a single item can be increasead or decreased, and the item can be removed.
 
 
 ## Routes
 
->
-> __*/*__ 
+ __*/*__ 
 > home page, where the full catalog is displayed.
->
-> __*/produto/:product-name*__
-> single product page, where is the full info about an item and where it can be added to the cart.
->
+
+ __*/produto/:product-name*__
+> single product page, where is the full info about an item and the 'add to cart' action.
+
 
 
 ## Folder Structure
@@ -72,8 +69,19 @@ Once they are gotten, it allows browse and search for items, pick them, select t
  |   |   /store.test.js
  |   /utils
  |   |   /...
+ |   App.css
+ |   App.js
+ |   App.test.js
+ |   data.json
+ |   index.js
+ |   mocks.js
 
 ```
+
+## API
+
+This website used to consume a third party API, making only a single request to get all the necessary data, i.e., the products. But the API is no longer available. Hence, for the sake of simplicity, the data is now gotten from a json file in the /src path, what does not affect this project intent.
+
 
 ## Tests
 

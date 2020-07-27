@@ -3,13 +3,16 @@ import routeData from 'react-router';
 import { cleanup } from '@testing-library/react'
 import { renderWithStoreAndRouter, getMockStore } from '../../utils/testStore'
 import * as actions from '../../store/actions'
-import { mockProduct } from '../../mocks'
+import { mockProduct, mockProducts } from '../../mocks'
 import '@testing-library/jest-dom/extend-expect'
 
 import ProductRoute from './ProductRoute'
 
 
-let store = getMockStore({ singleProduct: mockProduct })
+let store = getMockStore({ 
+  products: mockProducts,
+  singleProduct: mockProduct 
+})
 const mockDisplay = jest.spyOn(actions, 'displayProduct')
 const mockCloseSidePanel = jest.spyOn(actions, 'closeSidePanel')
 
